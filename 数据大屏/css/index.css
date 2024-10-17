@@ -1,0 +1,994 @@
+/* 首页的样式 */
+
+/* 电力封网服务平台 */
+.platform
+{
+	display: flex;
+	/* 让中心内容对顶部换行显示 */
+	flex-wrap: wrap;
+	/* 相对定位 */
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-image: url(../images/背景.svg);
+	/* 图片尺寸填充 */
+	background-size: cover;
+}
+
+/* 首部 */
+.platform .head
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	height: 6.49vh; 
+	margin-top: 1.85vh;
+	background-image: url(../images/装饰.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* logo */
+.head .logo
+{
+	width: 17.09vw;
+	height: 4.33vh;     
+	margin-left: 1.28vw;  
+	margin-top: 0.31vh; 
+	background-repeat: no-repeat;
+	background-image: url(../images/logo.svg);
+	background-size: contain;
+}
+
+/* 顶栏右半 */
+.head .right
+{
+	display: flex;
+}
+
+/* 箭头 */
+.head .right .iconfont
+{
+	font-size: 0.96vw;
+	color: #E1FAFD;
+	/* 垂直居中 */
+	line-height: 6.49vh;  
+	margin-right: 1.28vw;
+}
+
+/* 地球 */
+.head .right .earth
+{
+	width: 1.87vw;
+	height: 3.61vh;
+	margin-top: 1.44vh;
+	margin-right: 0.75vw;
+	background-image: url(../images/地球.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* 引入字体“优设标题黑” */
+@font-face 
+{
+	font-family: OptimizationTitleBlack;
+	src: url(../font/优设标题黑.ttf);
+}
+
+/* 时间 */
+.head .right .clock
+{
+	width: 10.68vw;
+	/* 使用字体“优设标题黑” */
+	font-family: OptimizationTitleBlack;
+	font-size: 1.49vw;
+	color: #D1F8FD;
+	line-height: 6.49vh;
+}
+
+/* 调整时间字体间距 */
+.head .right .clock span
+{
+	margin-left: -0.53vw;
+}
+
+/* 顶栏按钮 */
+.head .right button
+{
+	width: 5.77vw;
+	height: 3.30vh;
+	margin-right: 2.56vw;
+	margin-top: 1.44vh;
+	color: white;
+	font-size: 0.96vw;
+	/* 消除边框 */
+	border: none;
+	/* 透明度 */
+	opacity: 1;
+	/* 颜色样式 */
+	background: radial-gradient(126% 126% at 50% 50%, #0C3340 0%, #00F4FF 100%);
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/* 中心内容 */
+.platform .intent
+{
+	display: flex;
+	/* 水平分散对齐 */
+	justify-content: space-between;
+	/* 调整左右内边距 */
+	padding-left: 1.28vw;
+	padding-right: 1.28vw;
+	margin-top: 2.78vh;
+	width: 100vw;
+	height: 62.27vh;
+}
+
+/* 中心-左 */
+.intent .left
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 62.27vh;
+}
+
+/* 左上 */
+.intent .left .first
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 17.53vh;
+}
+
+/* 标题 */
+.intent .left .first .title
+{
+	width: 24.57vw;
+	height: 3.71vh;
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 4.33vh;
+	padding-left: 2.14vw;
+	background-image: url(../images/标题框-左.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* 数据 */
+.intent .left .first .data
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 12.58vh;
+}
+
+/* 数据-上 */
+.intent .left .first .data .up
+{
+	display: flex;
+	/* 水平居中 */
+	justify-content: space-between;
+	width: 22.97vw;
+	height: 6.39vh;
+	margin-left: 1.60vw;
+}
+
+.intent .left .first .data .up h4
+{
+	font-size: 0.64vw;
+	color: #FFFFFF;
+}
+
+.intent .left .first .data .up div
+{
+	display: flex;
+	justify-content: center;
+	width: 11.22vw;
+	height: 4.54vh;
+	color: #FFFFFF;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.71vw;
+	line-height: 4.54vh;
+	background: rgba(14, 88, 99, 0.49);
+	border: 0.02vw solid #3F6470;
+}
+
+.intent .left .first .data .up .iconfont
+{
+	font-size: 0.85vw;
+	line-height: 4.54vh;
+	margin-left: 0.75vw;
+}
+
+/* 数据-下 */
+.intent .left .first .data .foot
+{
+	display: flex;
+	justify-content: space-between;
+	width: 22.97vw;
+	height: 5.15vh;
+	margin-left: 1.60vw;
+}
+
+.intent .left .first .data .foot h4
+{
+	font-size: 0.64vw;
+	color: #FFFFFF;
+}
+
+.intent .left .first .data .foot div
+{
+	display: flex;
+	justify-content: center;
+	width: 5.34vw;
+	height: 3.30vh;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.28vw;
+	line-height: 3.30vh;
+	background: rgba(14, 88, 99, 0.49);
+	border: 0.05vw solid ;
+	border-image: linear-gradient(180deg, #3F6470 0%, rgba(63, 100, 112, 0) 2%, rgba(63, 100, 112, 0) 95%, #3F6470 100%) 1;
+}
+
+.intent .left .first .data .foot #div1
+{
+	color: #90DEE0;
+}
+
+.intent .left .first .data .foot #div2
+{
+	color: #E1977A;
+}
+
+.intent .left .first .data .foot #div3
+{
+	color: #D16B92;
+}
+
+.intent .left .first .data .foot #div4
+{
+	color: #E7D27E;
+}
+
+/* 左中 */
+.intent .left .second
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 21.86vh;
+}
+
+/* 标题 */
+.intent .left .second .title
+{
+	width: 24.57vw;
+	height: 3.71vh;
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 4.33vh;
+	padding-left: 2.14vw;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-左.svg);
+	background-size: cover;
+}
+
+/* 数据 */
+.intent .left .second .data
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 16.50vh;
+}
+
+.intent .left .second .data div
+{
+	display: flex;
+	margin-left: 1.60vw;
+	width: 22.97vw;
+	height: 4.95vh;
+	line-height: 4.95vh;
+	font-family: OptimizationTitleBlack;
+	background: rgba(14, 88, 99, 0.49);
+	border-left: 0.11vw solid #4be691;
+}
+
+.intent .left .second .data div i:nth-child(1)
+{
+	position: absolute;
+	margin-left: 1.07vw;
+	font-size: 0.96vw;
+	color: #D1F8FD;
+}
+
+.intent .left .second .data div i:nth-child(2)
+{
+	position: absolute;
+	margin-left: 4.27vw;
+	font-size: 1.28vw;
+	color: #FDFFA7;
+}
+
+.intent .left .second .data div i:nth-child(3)
+{
+	position: absolute;
+	margin-left: 10.68vw;
+	font-size: 0.64vw;
+	color: #7ddeff;
+}
+
+.intent .left .second .data div i:nth-child(4)
+{
+	position: absolute;
+	margin-left: 15.17vw;
+	font-size: 1.28vw;
+	color: #94FFF8;
+}
+
+.intent .left .second .data div i:nth-child(5)
+{
+	position: absolute;
+	margin-left: 21.37vw;
+	font-size: 0.64vw;
+	color: #7ddeff;
+}
+
+/* 左下 */
+.intent .left .third
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 20.41vh;
+}
+
+/* 标题 */
+.intent .left .third .title
+{
+	width: 24.57vw;
+	height: 3.71vh;
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 4.33vh;
+	padding-left: 2.14vw;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-左.svg);
+	background-size: cover;
+}
+
+/* 数据 */
+.intent .left .third .data
+{
+	margin-left: 1.60vw;
+	width: 22.97vw;
+	height: 14.85vh;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/* 中心-中 */
+.intent .middle
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 46.47vw;
+	height: 62.27vh;
+	margin-left: 1.07vw;
+	margin-right: 1.07vw;
+}
+
+.intent .middle .up
+{
+	display: flex;
+	justify-content: space-between;
+	width: 46.47vw;
+	height: 5.57vh;
+}
+
+.intent .middle .up span
+{
+	display: flex;
+	flex-direction: column;
+	width: 11.22vw;
+	height: 5.57vh;
+	background: rgba(14, 88, 99, 0.49);
+	border: 0.05vw solid #3F6470;
+}
+
+.intent .middle .up span:nth-child(1)
+{
+	margin-left: 0.11vw;
+	/* 图片不重复 */
+	background-repeat: no-repeat;
+	background-position: 1.07vw;
+	background-image: url(../images/灯泡1.svg);
+	background-size: contain;
+}
+
+.intent .middle .up span:nth-child(2)
+{
+	/* 图片不重复 */
+	background-repeat: no-repeat;
+	background-position: 1.07vw;
+	background-image: url(../images/灯泡2.svg);
+	background-size: contain;
+}
+
+.intent .middle .up span:nth-child(3)
+{
+	/* 图片不重复 */
+	background-repeat: no-repeat;
+	background-position: 1.07vw;
+	background-image: url(../images/灯泡3.svg);
+	background-size: contain;
+}
+
+.intent .middle .up span:nth-child(4)
+{
+	/* 图片不重复 */
+	background-repeat: no-repeat;
+	background-position: 1.07vw;
+	background-image: url(../images/灯泡4.svg);
+	background-size: contain;
+}
+
+/* 引入字体“联想小新潮酷体” */
+@font-face 
+{
+	font-family: PopularCool;
+	src: url(../font/联想小新潮酷体.ttf);
+}
+
+.intent .middle .up span i:nth-child(1)
+{
+	font-family: PopularCool;
+	font-size: 1.28vw;
+	/* 字间距 */
+	letter-spacing: 0.21vw;
+	margin-left: 4.27vw;
+}
+
+.intent .middle .up span:nth-child(1)
+{
+	color: #DCC97A;
+}
+
+.intent .middle .up span:nth-child(2)
+{
+	color: #46E2CA;
+}
+
+.intent .middle .up span:nth-child(3)
+{
+	color: #F481AD;
+}
+
+.intent .middle .up span:nth-child(4)
+{
+	color: #D1F8FD;
+}
+
+.intent .middle .up span i:nth-child(2)
+{
+	margin-top: -0.31vh;
+	color: #FFFFFF;
+	font-size: 0.53vw;
+	margin-left: 4.49vw;
+}
+
+.intent .middle .down
+{
+	width: 46.47vw;
+	height: 55.88vh;
+	/* background-color: #fff; */
+}
+
+/* 标题 */
+.intent .middle .down .title
+{
+	width: 46.47vw;
+	height: 4.33vh;
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 3.30vh;
+	padding-left: 2.14vw;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-中.svg);
+	background-size: 101%;
+}
+
+.intent .middle .down .robot
+{
+	width: 46.47vw;
+	height: 51.55vh;
+}
+
+.intent .middle .down .robot .my_video 
+{
+	width: 46.47vw;
+	height: 51.55vh;
+
+}
+
+/* 网页嵌套 */
+.intent .middle .down .robot iframe
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* 中心-右 */
+.intent .right
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 62.27vh;
+}
+
+.intent .right .up
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 32.99vh;
+}
+
+.intent .right .up .title
+{
+	width: 24.57vw;
+	height: 3.92vh;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-右.svg);
+	background-size: cover;
+}
+
+.intent .right .up .title i:nth-child(1)
+{
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 3.92vh;
+	padding-left: 2.14vw;
+}
+
+.intent .right .up .title i:nth-child(2)
+{
+	color: #95B1B5;
+	font-family: OptimizationTitleBlack;
+	font-size: 0.85vw;
+	line-height: 3.92vh;
+	padding-left: 0.75vw;
+}
+
+.intent .right .up .unit
+{
+	color: #ACE7EE;
+	font-size: 0.64vw;
+	margin-left: 19.23vw;
+}
+
+.intent .right .up .data
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 25.98vh;
+}
+
+.intent .right .up .data div
+{
+	display: flex;
+	width: 22.97vw;
+	height: 2.06vh;
+}
+
+.intent .right .up .data div span:nth-child(1)
+{
+	display: flex;
+	/* 水平居中 */
+	justify-content: center;
+	width: 0.43vw;
+	height: 0.82vh;
+	margin-left: 0.75vw;
+	margin-top: 0.62vh;
+	color: #FFFFFF;
+	line-height: 1.55vh;
+	font-size: 0vw;
+	border-radius: 100%;
+}
+
+/* 标签颜色 */
+.intent .right .up .data div:nth-child(1) span:nth-child(1)
+{
+	background-color: #CD172D;
+}
+
+.intent .right .up .data div:nth-child(2) span:nth-child(1)
+{
+	background-color: #DE9E64;
+}
+
+.intent .right .up .data div:nth-child(3) span:nth-child(1)
+{
+	background-color: #F6E166;
+}
+
+/* 选中第4个到最后一个div */
+.intent .right .up .data div:nth-child(n+4) span:nth-child(1)
+{
+	background-color: #27D7EF;
+}
+
+.intent .right .up .data div span:nth-child(2)
+{
+	margin-left: 1.07vw;
+	color: #FFFFFF;
+	font-size: 0.64vw;
+}
+
+/* 进度条 */
+.intent .right .up .data div:nth-child(1) span:nth-child(3)
+{
+	width: 10.04vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #CD2F41 77%);
+}
+
+.intent .right .up .data div:nth-child(2) span:nth-child(3)
+{
+	width: 8.12vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #DE9E64 77%);
+}
+
+.intent .right .up .data div:nth-child(3) span:nth-child(3)
+{
+	width: 7.10vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #F6E166 77%);
+}
+
+.intent .right .up .data div:nth-child(4) span:nth-child(3)
+{
+	width: 6.09vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, rgba(39, 215, 239, 0.9) 77%);
+}
+
+.intent .right .up .data div:nth-child(5) span:nth-child(3)
+{
+	width: 5.61vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #24C5DB 77%);
+}
+
+.intent .right .up .data div:nth-child(6) span:nth-child(3)
+{
+	width: 4.43vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #24C5DB 77%);
+}
+
+.intent .right .up .data div:nth-child(7) span:nth-child(3)
+{
+	width: 5.61vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #24C5DB 77%);
+}
+
+.intent .right .up .data div:nth-child(8) span:nth-child(3)
+{
+	width: 4.43vw;
+	height: 0.41vh;
+	margin-top: 1.03vh;
+	margin-left: 1.00vw;
+	background: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #24C5DB 77%);;
+}
+
+.intent .right .up .data div span:nth-child(4)
+{
+	position: absolute;
+	margin-left: 21.37vw;
+	color: #FFFFFF;
+	font-size: 0.64vw;
+}
+
+.intent .right .down
+{
+	display: flex;
+	/* 垂直分布 */
+  flex-direction: column;
+	/* 垂直分散对齐 */
+  align-items: flex-start;
+  justify-content: space-between;
+	width: 24.57vw;
+	height: 27.42vh;
+}
+
+/* 标题 */
+.intent .right .down .title
+{
+	width: 24.57vw;
+	height: 3.92vh;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-右.svg);
+	background-size: cover;
+}
+
+.intent .right .down .title i:nth-child(1)
+{
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 3.92vh;
+	padding-left: 2.14vw;
+}
+
+.intent .right .down .title i:nth-child(2)
+{
+	color: #95B1B5;
+	font-family: OptimizationTitleBlack;
+	font-size: 0.85vw;
+	line-height: 3.92vh;
+	padding-left: 0.75vw;
+}
+
+/* 数据 */
+.intent .right .down .data
+{
+	display: flex;
+	padding-top: 1.65vh;
+	padding-bottom: 1.65vh;
+	width: 24.57vw;
+	height: 21.65vh;
+	background-repeat: no-repeat;
+	background-position: 0 -1.03vh;
+	background-image: url(../images/圆环.svg);
+	background-size: 50%;
+}
+
+.intent .right .down .data .all
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1.60vw;
+	width: 9.51vw;
+	height: 18.35vh;
+	color: #FFFFFF;
+}
+
+.intent .right .down .data .all i:nth-child(1)
+{
+	font-family: OptimizationTitleBlack;
+	font-size: 2.24vw;
+}
+
+.intent .right .down .data .all i:nth-child(2)
+{
+	margin-top: -1.03vh;
+	font-size: 0.75vw;
+}
+
+.intent .right .down .data .other
+{
+	margin-left: 1.07vw;
+	width: 11.22vw;
+	height: 18.35vh;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/* 底部内容 */
+.platform .bottom
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2.78vh;
+	margin-bottom: 4.12vh;
+	padding-left: 1.28vw;
+	padding-right: 1.28vw;
+	width: 100vw;
+	height: 20.62vh;
+}
+
+/* 底部-左 */
+.bottom .left
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 72.01vw;
+	height: 20.62vh;
+}
+
+.bottom .left .title
+{
+	width: 72.01vw;
+	height: 4.33vh;
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 4.33vh;
+	padding-left: 2.14vw;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-左下.svg);
+	background-size: cover;
+}
+
+.bottom .left .data
+{
+	width: 72.01vw;
+	height: 15.67vh;
+	padding-left: 2.14vw;
+}
+
+/* 底部-右 */
+.bottom .right
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 1.07vw;
+	width: 24.25vw;
+	height: 20.62vh;
+}
+
+.bottom .right .title
+{
+	color: #D1F8FD;
+	font-family: OptimizationTitleBlack;
+	font-size: 1.07vw;
+	line-height: 3.92vh;
+	padding-left: 2.14vw;
+	width: 24.57vw;
+	height: 3.92vh;
+	background-repeat: no-repeat;
+	background-image: url(../images/标题框-右.svg);
+	background-size: cover;
+}
+
+.bottom .right .data
+{
+	display: flex;
+	/* 超出的容器换行显示 */
+	flex-wrap: wrap;
+	padding-left: 0.80vw;
+	padding-right: 0.80vw;
+	padding-top: 0.80vh;
+	justify-content: space-between;
+	width: 24.57vw;
+	height: 18.88vh;
+}
+
+.bottom .right .data span
+{
+	display: flex;
+	flex-direction: column;
+	width: 11.11vw;
+	height: 7.22vh;
+	background: rgba(14, 88, 99, 0.49);
+	border: 0.05vw solid ;
+	border-image: linear-gradient(109deg, #3F6470 0%, rgba(63, 100, 112, 0) 50%, #3E636F 99%) 1;
+}
+
+.bottom .right .data span:nth-child(n+3)
+{
+	margin-top: 0.82vh;
+}
+
+.bottom .right .data span:nth-child(1)
+{
+	background-repeat: no-repeat;
+	background-position: 0.85vw 1.65vh;
+	background-image: url(../images/CO2.svg);
+	background-size: 35%;
+}
+
+.bottom .right .data span:nth-child(2)
+{
+	background-repeat: no-repeat;
+	background-position: 0.85vw 1.65vh;
+	background-image: url(../images/SO2.svg);
+	background-size: 35%;
+}
+
+.bottom .right .data span:nth-child(3)
+{
+	background-repeat: no-repeat;
+	background-position: 1.39vw 1.24vh;
+	background-image: url(../images/煤气.svg);
+	background-size: 25%;
+}
+
+.bottom .right .data span:nth-child(4)
+{
+	background-repeat: no-repeat;
+	background-position: 1.39vw 1.24vh;
+	background-image: url(../images/电.svg);
+	background-size: 25%;
+}
+
+.bottom .right .data span i:nth-child(1)
+{
+	margin-top: 0.21vh;
+	margin-left: 5.88vw;
+	color: #79F3E0;
+	font-family: MiSans;
+	font-size: 1.50vw;
+	font-weight: 700;
+}
+
+.bottom .right .data span i:nth-child(2)
+{
+	margin-top: -0.41vh;
+	margin-left: 6.41vw;
+	color: #FFFFFF;
+	font-size: 0.75vw;
+}

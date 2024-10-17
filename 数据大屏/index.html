@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>输电线路封网机器人</title>
+	<!-- 引入CSS -->
+	<link rel="stylesheet" href="./iconfont/iconfont.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<!-- 引入echars -->
+	<script src="./js/echarts.js"></script>
+	<!-- 搜索图标 -->
+	<link rel="shortcut icon" href="electricity.ico" type="image/x-icon">
+</head>
+
+<body>
+	<!-- 电力封网服务平台 -->
+	<div class="platform">
+		<!-- 顶栏 -->
+		<div class="head">
+			<!-- logo -->
+			<div class="logo"></div>
+
+			<!-- right -->
+			<div class="right">
+				<!-- 按钮 -->
+				<button onclick="">监控系统</button>
+				<button onclick="">控制台</button>
+
+				<!-- 时间 -->
+				<p class="clock">
+					<span id="hours">00</span>
+					<i>:</i>
+					<span id="minutes">25</span>
+					<i>:</i>
+					<span id="seconds">20</span>
+				</p>
+
+				<!-- 地球 -->
+				<div class="earth"></div>
+
+				<!-- 箭头 -->
+				<span class="iconfont icon-xiajiantou"></span>
+			</div>
+		</div>
+
+		<!-- 中部 -->
+		<div class="intent">
+			<!-- 左半 -->
+			<div class="left">
+				<!-- 左上 -->
+				<div class="first">
+					<!-- 标题 -->
+					<div class="title">遥控站点</div>
+
+					<!-- 数据 -->
+					<div class="data">
+						<div class="up">
+							<span>
+								<h4>站点</h4>
+								<div>
+									<i>17</i>
+									<span class="iconfont icon-xiangshang"></span>
+								</div>
+							</span>
+							<span>
+								<h4>服务器</h4>
+								<div>
+									<i>432</i>
+									<span class="iconfont icon-xiangshang"></span>
+								</div>
+							</span>
+						</div>
+
+						<div class="foot">
+							<span>
+								<h4>在线</h4>
+								<div id="div1"><i>12</i></div>
+							</span>
+							<span>
+								<h4>离线</h4>
+								<div id="div2"><i>5</i></div>
+							</span>
+							<span>
+								<h4>故障</h4>
+								<div id="div3"><i>3</i></div>
+							</span>
+							<span>
+								<h4>警告</h4>
+								<div id="div4"><i>8</i></div>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 左中 -->
+				<div class="second">
+					<!-- 标题 -->
+					<div class="title">封网停电</div>
+
+					<!-- 数据 -->
+					<div class="data">
+						<div>
+							<i>当日</i>
+							<i>21.3</i>
+							<i>Kw/h</i>
+							<i>31.2</i>
+							<i>元</i>
+						</div>
+						<div>
+							<i>当月</i>
+							<i>301.2</i>
+							<i>Kw/h</i>
+							<i>931.2</i>
+							<i>元</i>
+						</div>
+						<div>
+							<i>当年</i>
+							<i>67701.2</i>
+							<i>Kw/h</i>
+							<i>21431.2</i>
+							<i>元</i>
+						</div>
+					</div>
+				</div>
+
+				<!-- 左下 -->
+				<div class="third">
+					<!-- 标题 -->
+					<div class="title">功率曲线</div>
+
+					<!-- 数据 -->
+					<div class="data" id="bar"></div>
+				</div>
+			</div>
+
+			<!-- 中间 -->
+			<div class="middle">
+				<div class="up">
+					<span>
+						<i>1012.3</i>
+						<i>电量损耗：kw/h</i>
+					</span>
+					<span>
+						<i>947.5</i>
+						<i>累计权益：元</i>
+					</span>
+					<span>
+						<i>4200</i>
+						<i>总装机容量：kw</i>
+					</span>
+					<span>
+						<i>3950</i>
+						<i>当前总功率：w</i>
+					</span>
+				</div>
+
+				<div class="down">
+					<div class="title">交互模型</div>
+
+					<div class="robot">
+						<!-- 嵌套视频 -->
+						<video class="my_video" loop autoplay muted>
+							<source src="./video/动态视频.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+
+			<!-- 右半 -->
+			<div class="right">
+				<div class="up">
+					<div class="title">
+						<i>组件效率</i>
+						<i>等效小时</i>
+					</div>
+
+					<div class="unit">耗电百分比：%</div>
+
+					<div class="data">
+						<div>
+							<span>1</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>51.24</span>
+						</div>
+						<div>
+							<span>2</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>40.99</span>
+						</div>
+						<div>
+							<span>3</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>35.87</span>
+						</div>
+						<div>
+							<span>4</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>28.70</span>
+						</div>
+						<div>
+							<span>5</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>25.83</span>
+						</div>
+						<div>
+							<span>6</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>20.66</span>
+						</div>
+						<div>
+							<span>7</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>25.83</span>
+						</div>
+						<div>
+							<span>8</span>
+							<span>固行区域线路组件耗损</span>
+							<span></span>
+							<span>20.66</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="down">
+					<div class="title">
+						<i>运行统计</i>
+						<i>警告列表</i>
+					</div>
+
+					<div class="data">
+						<div class="all">
+							<i>439</i>
+							<i>故障总数</i>
+						</div>
+
+						<div class="other" id="pie"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="bottom">
+			<div class="left">
+				<div class="title">压力读数</div>
+
+				<div class="data" id="lineBar"></div>
+			</div>
+
+			<div class="right">
+				<div class="title">环境干扰监控</div>
+
+				<div class="data">
+					<span>
+						<i>3,312</i>
+						<i>温度指标</i>
+					</span>
+					<span>
+						<i>2,070</i>
+						<i>湿度指标</i>
+					</span>
+					<span>
+						<i>2,453</i>
+						<i>光照强度</i>
+					</span>
+					<span>
+						<i>1024</i>
+						<i>电磁干扰</i>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 引入js文件 -->
+	<script src="./js/index.js"></script>
+
+	<!-- echarts绘图——柱状图 -->
+	<script src="./js/bar.js"></script>
+	<!-- echarts绘图——折柱混合 -->
+	<script src="./js/lineBar.js"></script>
+	<!-- echarts绘图——饼图 -->
+	<script src="./js/pie.js"></script>
+</body>
+
+</html>
